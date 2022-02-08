@@ -32,8 +32,11 @@ function montarPalavraNaTela(){
     }
 }
 
+
+
 function verificaLetraEscolhida(letra){
-    document.getElementById("tecla-" + letra).disabled = true;
+    document.getElementById("tecla-" + letra).disabled = false;
+   
     if(tentativas > 0)
     {
         mudarStyleLetra("tecla-" + letra);
@@ -41,6 +44,11 @@ function verificaLetraEscolhida(letra){
         montarPalavraNaTela();
     }    
 }
+
+
+  
+
+
 
 function mudarStyleLetra(tecla){
     document.getElementById(tecla).style.background = "#C71585";
